@@ -26,6 +26,7 @@ You need to have the following CSV files ready:
 Make sure these files contain the necessary columns, including Timestamp, Close, High, Low.
 
 5. Load and Run the Code
+
 Load the datasets by specifying the correct file paths to your training and testing data.
 Define the initial parameters:
 Initial capital (initial_capital), e.g., $1,000,000.
@@ -36,7 +37,7 @@ Run the optimization using Optuna, which will test different parameter sets for 
 Backtest the best-performing strategy on test data to validate its performance.
 Visualize the results by plotting the portfolio value over time for each strategy compared to a passive buy-and-hold approach.
 
-6. Running the Optimization
+7. Running the Optimization
 Run the optimization function, which will:
 
 Iterate through different combinations of indicators.
