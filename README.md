@@ -3,7 +3,7 @@
 ## Descripción  
 This project optimizes trading strategies by applying five technical indicators to historical data in Python. Buy/sell signals are generated, tested with backtesting, and key parameters are optimized using advanced techniques. Results include graphs and metrics compared to a passive strategy.
 
-## Estructura del proyecto 
+##  Project Structure 
 - **data/**: Contains training and test datasets for different timeframes.
 - **technical_analysis/**: Contains only module specific code.
 - **utils/**: Helper methods, etc.
@@ -29,12 +29,18 @@ Make sure these files contain the necessary columns, including Timestamp, Close,
 
 Load the datasets by specifying the correct file paths to your training and testing data.
 Define the initial parameters:
+
 Initial capital (initial_capital), e.g., $1,000,000.
+
 Commission rate (commission), e.g., 0.125% (0.00125).
+
 Risk-free rate (risk_free_rate), calculated based on annual return.
+
 Generate combinations of technical indicators to test various strategies.
+
 Run the optimization using Optuna, which will test different parameter sets for each combination of technical indicators. The goal is to maximize the Sharpe Ratio.
 Backtest the best-performing strategy on test data to validate its performance.
+
 Visualize the results by plotting the portfolio value over time for each strategy compared to a passive buy-and-hold approach.
 
 7. Running the Optimization
@@ -59,7 +65,11 @@ If necessary, adjust the number of optimization trials or fine-tune your dataset
 
 
 
-## Autores
+## Authors
 - Gustavo Guevara López
 - José Jorge Degollado Maldonado
 - Erick Pacheco Parra
+
+## License
+
+See the LICENSE.md file for details.
