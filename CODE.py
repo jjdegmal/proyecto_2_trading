@@ -113,6 +113,7 @@ def backtest(data, strategy, sl, tp, n_shares, initial_capital, commission,
             # Do we have enough money?
             if capital > row.Close * n_shares * (1 + COM) and len(short_positions) < 100:
                 # Sell short (borrow and sell the share)
+                capital -= row.Close * n_shares * COM
                 short_positions.append(Position(ticker="AAPL",
                                                 n_shares=n_shares,
                                                 price=row.Close,
